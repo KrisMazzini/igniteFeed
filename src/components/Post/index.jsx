@@ -76,12 +76,12 @@ export function Post({author, content, publishedAt}) {
                     <button type='submit'>Publicar</button>
                 </footer>
 
-                <div className={styles.commentList}>
-                    {
-                        comments.map(comment => <Comment key={comment} content={comment} />)
-                    }
-                </div>
             </form>
+            <div className={styles.commentList}>
+                {
+                    comments.map(comment => <Comment key={comment} content={comment} />)
+                }
+            </div>
         </article>
     )
 }
